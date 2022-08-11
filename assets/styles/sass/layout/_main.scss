@@ -1,0 +1,10 @@
+// function
+@use "../modules/mixin";
+*{
+    margin: 0;
+    padding:0;
+}
+
+// fonts
+@include mixin.addFont("Montserrat",'/assets/fonts/Montserrat-Regular.woff' );
+@include mixin.addFont("Oswald",'/assets/fonts/Oswald-Regular.woff' );

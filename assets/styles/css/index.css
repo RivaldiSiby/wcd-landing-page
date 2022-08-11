@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.woff");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/assets/fonts/Oswald-Regular.woff");
+}
+.logo-nav-wrapper {
+  flex: 5;
+}
+.logo-nav-wrapper .logo-nav {
+  width: 100%;
+}
+
+.nav-menu-bar {
+  flex: 5;
+}
+.nav-menu-bar .nav-menu-text {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 12px;
+  letter-spacing: 2px;
+  color: #272727;
+  text-shadow: 0 0 1px #272727;
+  transition: 0.5s;
+  cursor: pointer;
+  border-bottom: 4px solid white;
+}
+.nav-menu-bar .nav-menu-text:hover {
+  border-bottom: 4px solid #f05223;
+}
+.nav-menu-bar .hamburger-btn-nav {
+  color: #f05223;
+  font-size: 20px;
+  letter-spacing: 15px;
+  margin: 0 15px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.nav-menu-bar .hamburger-btn-nav:hover {
+  transform: scale(1.2);
+}
+
+.jumbotron {
+  width: 100%;
+  height: 700px;
+  background-image: url("/assets/img/header/bg-jumbotron.jpg");
+  background-size: cover;
+}
+.jumbotron .box-wrapper {
+  display: none;
+  background-color: rgba(46, 52, 54, 0.6862745098);
+  height: 700px;
+  width: 100%;
+}
+.jumbotron .box-wrapper .title-jumbotron {
+  font-family: "Oswald";
+  color: white;
+  font-size: 100px;
+  text-shadow: 0 0 1px #2e3436;
+}
+.jumbotron .box-wrapper .text-jumbotron {
+  font-size: 23px;
+  font-family: "Oswald";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #1c1f20;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.jumbotron .box-wrapper .btn-jumbotron {
+  font-family: "Montserrat";
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #1c1f20;
+  font-size: 13px;
+  padding: 8px 45px;
+  transition: 0.5s;
+}
+.jumbotron .box-wrapper .btn-jumbotron:hover {
+  background: #f05223;
+  border: 1px solid #f05223;
+  font-size: 13px;
+  padding: 8px 45px;
+}
+
+.body-company {
+  width: 100%;
+  height: auto;
+}
+.body-company h2 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Oswald";
+  color: #f05223;
+}
+.body-company .box-about {
+  width: 100%;
+  height: 400px;
+  justify-content: flex-start;
+  column-gap: 2%;
+  margin-bottom: 50px;
+}
+.body-company .box-about section {
+  flex-basis: 48%;
+  display: flex;
+}
+.body-company .box-about section img {
+  flex: 1;
+}
+.body-company .box-about div {
+  flex-basis: 45%;
+}
+.body-company .box-about div h4 {
+  color: #333333;
+  font-size: 33px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 1px #333333;
+  letter-spacing: 2px;
+}
+.body-company .box-about div p {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+.body-company .box-mission {
+  width: 100%;
+  height: 400px;
+  justify-content: flex-end;
+  column-gap: 2%;
+  margin-bottom: 50px;
+}
+.body-company .box-mission section {
+  flex-basis: 48%;
+  display: flex;
+}
+.body-company .box-mission section img {
+  flex: 1;
+}
+.body-company .box-mission div {
+  flex-basis: 45%;
+}
+.body-company .box-mission div h4 {
+  color: #333333;
+  font-size: 33px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 1px #333333;
+  letter-spacing: 2px;
+}
+.body-company .box-mission div p {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+.body-company .box-mission .mission-list span {
+  font-size: 25px;
+  color: #f05223;
+  padding-right: 25px;
+}
+.body-company .box-business {
+  width: 100%;
+  height: 400px;
+  justify-content: flex-start;
+  column-gap: 2%;
+  margin-bottom: 50px;
+}
+.body-company .box-business section {
+  flex-basis: 48%;
+  display: flex;
+}
+.body-company .box-business section img {
+  flex: 1;
+}
+.body-company .box-business div {
+  flex-basis: 45%;
+}
+.body-company .box-business div h4 {
+  color: #333333;
+  font-size: 33px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 1px #333333;
+  letter-spacing: 2px;
+}
+.body-company .box-business div p {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.body-milestone {
+  width: 100%;
+  height: 600px;
+  background-image: url("/assets/img/body/milestone/bg.png");
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.body-milestone h4 {
+  color: #333333;
+  font-size: 33px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 1px #333333;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.body-milestone .box-list-icon {
+  width: 80%;
+  height: 180px;
+  justify-content: space-between;
+  padding: 0;
+}
+.body-milestone .box-list-icon .wrap-box-icon {
+  height: 100%;
+}
+.body-milestone .box-list-icon .wrap-box-icon .bullet-icon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+.body-milestone .box-list-icon .wrap-box-icon .bullet-icon i {
+  color: #f05223;
+  font-size: 50px;
+}
+.body-milestone .box-list-icon .wrap-box-icon .active-icon {
+  background-color: #f05223;
+}
+.body-milestone .box-list-icon .wrap-box-icon .active-icon i {
+  color: white;
+  font-size: 50px;
+}
+.body-milestone .box-list-icon .wrap-box-icon p {
+  margin: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 21px;
+  color: #333333;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.body-milestone .box-text-milistone {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  padding: 0 2%;
+}
+.body-milestone .box-text-milistone p {
+  text-align: center;
+  border-radius: 10px;
+  font-size: 21px;
+  color: #666666;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */
