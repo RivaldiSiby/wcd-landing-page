@@ -184,6 +184,9 @@
                 font-family: variable.$font2;
                 color:variable.$colorTextCompany;
             }
+            .text-value-active{
+                color:variable.$colorOrange;
+            }
         }
     }
     .slide-click-btn{
@@ -213,4 +216,205 @@
    
 }
 // value
+// testimoni
+.body-testimoni{
+    height: 600px;
+    width: 100%;
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    h5{
+        font-size: 20.83;
+        font-family: variable.$font2;
+        text-transform: uppercase;
+        font-weight: bold;
+        color:black;
+        span{
+            color:variable.$colorTextCompany;
+            font-weight: 100;
+        }
+        .position{
+            color:variable.$colorOrange;
+            font-weight: bold;
+        }
+    }
+    p{
+        text-align: center;
+        font-weight:600;
+        width: 60%;
+        font-size: 18px;
+        color:variable.$colorTextCompany;
+        font-family: variable.$font1;
+    }
+    i{
+        font-size:35px;
+        color:variable.$colorOrange;
+        font-weight: bold;
+    }
+}
+// testimoni
+// career
+.body-career{
+    background-color: #f1f1f1;
+    width: 100%;
+    min-height:850px;
+    margin-bottom: 50px;
+    padding:70px;
+    .info-career{
+        h2{
+            font-size: 60px;
+            font-weight: bold;
+            font-family: variable.$font2;
+            color:variable.$colorOrange;
+        }
+        img{
+            width:90%;
+            height: 500px;
+        }
+        p{
+            font-size: 16px;
+            color:variable.$colorTextCompany;
+            font-family: variable.$font1;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 36px;
+            color:black;
+            text-transform: uppercase;
+            font-family: variable.$font2;
+            font-weight: bold; 
+            text-shadow: 0 0 2px solid black;
+        }
+    }
+    .form-career{
+        padding-top: 100px;
+        .label-form-text{
+            font-size: 16px;
+            color:variable.$colorTextCompany;
+            font-family: variable.$font1;
+            font-weight: bold;
+            text-transform: uppercase;
+        }  
+        select{
+            text-transform: uppercase;
+            overflow: hidden;
+            
+        } 
+        .input-form-style{
+            border:none;
+            box-shadow: 0 0 2px 0.5 variable.$colorTextCompany;
+            font-size: 16px;
+            color:variable.$colorTextCompany;
+            font-family: variable.$font1;
+            font-weight: bold;
+            resize: none;
+            background-color: white;
+            
+            option{
+                border:none;
+                box-shadow: 0 0 2px 0.5 variable.$colorTextCompany;
+                font-size: 16px;
+                color:variable.$colorTextCompany;
+                font-family: variable.$font1;
+                font-weight: bold;
+            }
+        }
+        .btn-form-career{
+            width: 25%;
+            height:40px;
+            font-size: 16px;
+            font-family: variable.$font1;
+            text-align: center;
+            background-color:variable.$colorOrange;
+            color:white;
+            border:none;
+            border-radius: 5px;  
+            transition: ease 0.6s;
+        }
+        .btn-form-career:hover{
+            transform: scale(1.05);
+        }
+        .file-style{
+            width:70%;
+            height: 40px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .input-btn-file{
+            width:30%;
+            height: 40px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 16px;
+            font-family: variable.$font1;
+            background-color:variable.$colorOrange;
+            color:white;
+            cursor: pointer;
+            transition: ease 0.6s;
+        }
+        .input-btn-file:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+// career
+// contact
+.body-contact{
+    height: 450px;
+    width: 100%;
+    margin-bottom: 50px;
+    .contact-form{
+        h2{
+            font-size: 60px;
+            font-weight: bold;
+            font-family: variable.$font2;
+            color:variable.$colorOrange;
+        }
+        p{
+            font-size: 16px;
+            color:variable.$colorTextCompany;
+            font-family: variable.$font1;
+            text-shadow: 0 0 1px black;
+        }
+        form{
+            input,textarea{
+                border:none;
+                box-shadow: 0 0 2px variable.$colorTextCompany;
+                font-size: 16px;
+                text-shadow: 0 0 1px black;
+                color:variable.$colorTextCompany;
+                font-family: variable.$font1;
+                resize: none;
+                background-color: white;
+            }
+            button{
+                width: 100%;
+                height:40px;
+                font-size: 16px;
+                font-family: variable.$font1;
+                text-align: center;
+                background-color:variable.$colorOrange;
+                color:white;
+                border:none;
+                border-radius: 5px;
+                transition: ease 0.6s;
+            }
+            button:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    .contact-img{
+        display: flex;
+        img{
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+}
+// contact
 // body
+

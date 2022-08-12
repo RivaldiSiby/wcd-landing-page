@@ -1,5 +1,6 @@
 // function
 @use "../modules/mixin";
+@use "../modules/variable";
 *{
     margin: 0;
     padding:0;
@@ -8,3 +9,33 @@
 // fonts
 @include mixin.addFont("Montserrat",'/assets/fonts/Montserrat-Regular.woff' );
 @include mixin.addFont("Oswald",'/assets/fonts/Oswald-Regular.woff' );
+
+// fix button
+.fix-button{
+    position: fixed;
+    width:100px;
+    height:auto;
+    z-index:10;
+    bottom:50px;
+    right:2.5%;
+    .arrow-btn-up{
+        width:50px;
+        font-size:30px;
+        text-decoration: none;
+        color:white;
+        border-radius: 50%;
+        height:50px;
+        background-color: variable.$colorOrange;
+        margin: 10px 0;
+    }
+    .wa-btn{
+        width:50px;
+        font-size:58px;
+        text-decoration: none;
+        color:white;
+        border-radius: 50%;
+        height:50px;
+        background-color: green;
+        margin: 10px 0;
+    }
+}

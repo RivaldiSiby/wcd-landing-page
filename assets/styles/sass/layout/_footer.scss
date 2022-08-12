@@ -1,0 +1,99 @@
+@use "../modules/variable";
+@use "../modules/mixin";
+
+// footer
+footer{
+    width: 100%;
+    height:800px;
+    .footer-main{
+        width: 100%;
+        height: 700px;
+        padding:100px 0;
+        background-color: #0f0e0e;
+        .footer-main-info{
+            height:100%;
+            img{
+                width: 150px;
+                height:150px;
+            }
+            h5{
+                font-size: 16px;
+                font-family: variable.$font2;
+                color:variable.$colorOrange;
+                font-weight: bold;
+                text-shadow: 0 0 1px black;
+                letter-spacing: 1px;
+            }
+            p{
+                font-size: 16px;
+                font-family: variable.$font1;
+                color:white;
+                text-shadow: 0 0 1px black;
+                font-weight: 400;
+            }
+        }
+        .footer-main-map{
+            p{
+                font-size: 16px;
+                font-family: variable.$font1;
+                color:white;
+                font-weight: 400;
+                text-shadow: 0 0 1px black;
+                text-transform: uppercase;
+            }
+            .img-box{
+                margin-top: 50px;
+                height: 370px;
+                width: 100%;
+                img{
+                    width:100%;
+                    height: 100%;
+                }
+            }
+        }
+        .footer-main-img{
+            p{
+                font-size: 16px;
+                font-family: variable.$font1;
+                color:white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .img-box-list{
+                margin-top: 50px;
+                height: 370px;
+                width: 100%;
+                .footer-wrap-img{
+                    height: 370px;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    img{
+                        max-width: 32%;
+                        flex-basis:32%;
+                        height:32.5%;
+                        margin-bottom: 1%;
+                    }
+                }
+            }
+            span{
+                font-size: 13px;
+                font-family: variable.$font1;
+                color:variable.$colorOrange;
+                text-shadow: 0 0 1px black;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .footer-foot{
+        width: 100%;
+        height: 100px;
+        p{
+            color: #414040; 
+            font-size: 13px;
+            font-family: variable.$font1;
+        }
+    }
+}
+// footer
