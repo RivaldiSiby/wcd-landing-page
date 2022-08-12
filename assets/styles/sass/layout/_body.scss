@@ -16,6 +16,7 @@
        @include mixin.boxCompany(flex-start);
     }
     .box-mission{
+        padding-top: 50px;
        @include mixin.boxCompany(flex-end);
        .mission-list{
         span{
@@ -143,4 +144,10 @@
     }
 }
 // galery
+// value
+.body-value{
+    width: 100%;
+    height:500px;
+}
+// value
 // body
