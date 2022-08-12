@@ -106,22 +106,31 @@
 }
 .body-company .box-about {
   width: 100%;
-  height: 400px;
+  height: 500px;
   justify-content: flex-start;
   column-gap: 2%;
   margin-bottom: 50px;
 }
-.body-company .box-about section {
+.body-company .box-about .img-box-company {
   flex-basis: 48%;
+  max-width: 48%;
   display: flex;
+  align-items: center;
 }
-.body-company .box-about section img {
+.body-company .box-about .img-box-company img {
+  max-width: 100%;
+  flex-basis: 100%;
+  max-height: 500px;
   flex: 1;
 }
-.body-company .box-about div {
+.body-company .box-about .text-box-company {
   flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
-.body-company .box-about div h4 {
+.body-company .box-about .text-box-company h4 {
   color: #333333;
   font-size: 33px;
   font-family: "Oswald";
@@ -130,29 +139,38 @@
   text-shadow: 0 0 1px #333333;
   letter-spacing: 2px;
 }
-.body-company .box-about div p {
+.body-company .box-about .text-box-company p {
   color: #666666;
   font-size: 16px;
   font-family: "Montserrat";
 }
 .body-company .box-mission {
   width: 100%;
-  height: 400px;
+  height: 600px;
   justify-content: flex-end;
   column-gap: 2%;
   margin-bottom: 50px;
 }
-.body-company .box-mission section {
+.body-company .box-mission .img-box-company {
   flex-basis: 48%;
+  max-width: 48%;
   display: flex;
+  align-items: center;
 }
-.body-company .box-mission section img {
+.body-company .box-mission .img-box-company img {
+  max-width: 100%;
+  flex-basis: 100%;
+  max-height: 500px;
   flex: 1;
 }
-.body-company .box-mission div {
+.body-company .box-mission .text-box-company {
   flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
-.body-company .box-mission div h4 {
+.body-company .box-mission .text-box-company h4 {
   color: #333333;
   font-size: 33px;
   font-family: "Oswald";
@@ -161,10 +179,13 @@
   text-shadow: 0 0 1px #333333;
   letter-spacing: 2px;
 }
-.body-company .box-mission div p {
+.body-company .box-mission .text-box-company p {
   color: #666666;
   font-size: 16px;
   font-family: "Montserrat";
+}
+.body-company .box-mission .mission-list {
+  width: 100%;
 }
 .body-company .box-mission .mission-list span {
   font-size: 25px;
@@ -173,22 +194,31 @@
 }
 .body-company .box-business {
   width: 100%;
-  height: 400px;
+  height: 500px;
   justify-content: flex-start;
   column-gap: 2%;
   margin-bottom: 50px;
 }
-.body-company .box-business section {
+.body-company .box-business .img-box-company {
   flex-basis: 48%;
+  max-width: 48%;
   display: flex;
+  align-items: center;
 }
-.body-company .box-business section img {
+.body-company .box-business .img-box-company img {
+  max-width: 100%;
+  flex-basis: 100%;
+  max-height: 500px;
   flex: 1;
 }
-.body-company .box-business div {
+.body-company .box-business .text-box-company {
   flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
-.body-company .box-business div h4 {
+.body-company .box-business .text-box-company h4 {
   color: #333333;
   font-size: 33px;
   font-family: "Oswald";
@@ -197,7 +227,7 @@
   text-shadow: 0 0 1px #333333;
   letter-spacing: 2px;
 }
-.body-company .box-business div p {
+.body-company .box-business .text-box-company p {
   color: #666666;
   font-size: 16px;
   font-family: "Montserrat";
@@ -329,6 +359,11 @@
   height: 20px;
   border-radius: 50%;
   margin: 10px;
+}
+
+.body-value {
+  width: 100%;
+  height: 500px;
 }
 
 /*# sourceMappingURL=index.css.map */

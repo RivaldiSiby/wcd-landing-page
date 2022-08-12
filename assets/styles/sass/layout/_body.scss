@@ -13,12 +13,12 @@
         color:variable.$colorOrange;
     }
     .box-about{
-       @include mixin.boxCompany(flex-start);
+       @include mixin.boxCompany(flex-start,500px);
     }
     .box-mission{
-        padding-top: 50px;
-       @include mixin.boxCompany(flex-end);
+       @include mixin.boxCompany(flex-end,600px);
        .mission-list{
+        width: 100%;
         span{
             font-size: 25px;
             color:variable.$colorOrange;
@@ -27,7 +27,7 @@
        }
     }
     .box-business{
-        @include mixin.boxCompany(flex-start);
+        @include mixin.boxCompany(flex-start,500px);
      }
 }
 // company

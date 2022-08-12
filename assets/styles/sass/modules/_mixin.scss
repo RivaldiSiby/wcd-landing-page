@@ -6,36 +6,46 @@
         src: url($url)
     }
 }
-@mixin boxCompany($start){
+@mixin boxCompany($start,$height){
     width:100%;
-        height:400px;
-        justify-content: $start;
-        column-gap: 2%;
-        margin-bottom: 50px;
-        section {
-            flex-basis: 48%;
-            display: flex;
-            img{
-                flex: 1;
-            }
+    height:$height;
+    justify-content: $start;
+    column-gap: 2%;
+    margin-bottom: 50px;
+    .img-box-company {
+        flex-basis: 48%;
+        max-width:48% ;
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 100%;
+            flex-basis: 100%;
+            max-height: 500px;
+            flex: 1;
         }
-        div {
-            flex-basis: 45%;
-            h4{
-                color:variable.$colorDark;
-                font-size: 33px;
-                font-family: variable.$font2; 
-                text-transform: uppercase;
-                font-weight: bold;
-                text-shadow: 0 0 1px variable.$colorDark;
-                letter-spacing: 2px;
-            }
-            p{
-                color:variable.$colorTextCompany;
-                font-size: 16px;
-                font-family: variable.$font1;
-            }
+    }
+    .text-box-company {
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        h4{
+            color:variable.$colorDark;
+            font-size: 33px;
+            font-family: variable.$font2; 
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 0 0 1px variable.$colorDark;
+            letter-spacing: 2px;
         }
+        p{
+            color:variable.$colorTextCompany;
+            font-size: 16px;
+            font-family: variable.$font1;
+        }
+    }
+    
 }
 
 @mixin titleSmall($align) {
