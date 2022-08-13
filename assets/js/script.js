@@ -16,4 +16,15 @@ $(document).ready(() => {
     btnValueLeft.removeClass("btn-active-value");
     btnValueRight.addClass("btn-active-value");
   });
+  // fixed menubar
+  let menubarfix = $("#menu-bar-fix");
+  let navBtn = $(".hamburger-btn-nav");
+  let closeBtn = $("#close-menu");
+
+  navBtn.on("click", () => {
+    menubarfix.removeClass("d-none");
+  });
+  closeBtn.on("click", () => {
+    menubarfix.addClass("d-none");
+  });
 });
