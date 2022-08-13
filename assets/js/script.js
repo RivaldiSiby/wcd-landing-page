@@ -1,4 +1,24 @@
 $(document).ready(() => {
+  // scrool
+  $(window).scroll(() => {
+    const scroll = $(window).scrollTop();
+    if (scroll > 500) {
+      $("#arrow-up").removeClass("d-none");
+      $("#arrow-up").removeClass("d-none");
+    } else {
+      $("#arrow-up").addClass("d-none");
+    }
+  });
+  // milestone
+  for (let i = 1; i <= 5; i++) {
+    $(`#main-text${i}`).toggleClass("d-none");
+    $(`#icon-milestone${i}`).on("click", () => {
+      $(`#box-milestone${i}`).toggleClass("wrap-box-active");
+      $(`#icon-milestone${i}`).toggleClass("fa-plus");
+      $(`#icon-milestone${i}`).toggleClass("fa-minus");
+      $(`#main-text${i}`).toggleClass("d-none");
+    });
+  }
   // slide value
   let slideValue = $(".box-value-list");
   let btnValueLeft = $("#btn-left-value");
