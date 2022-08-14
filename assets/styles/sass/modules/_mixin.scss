@@ -88,4 +88,16 @@
     padding-bottom: 50px;
     text-align: $align;
 }
+@mixin titleSmallResponsive($align) {
+    color:variable.$colorDark;
+    font-size: 25px;
+    font-family: variable.$font2; 
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px variable.$colorDark;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: $align;
+}
 // function

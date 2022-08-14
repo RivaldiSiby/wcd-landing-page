@@ -26,6 +26,7 @@ footer{
             }
             section{
                 flex:1;
+                display: flex;
             }
             .img-list-media{
                 margin-left: 15%;
@@ -102,6 +103,9 @@ footer{
                 color:variable.$colorOrange;
                 text-shadow: 0 0 1px black;
                 cursor: pointer;
+            }
+            .border-media{
+                display: none;
             }
         }
         

@@ -42,7 +42,7 @@
 
 .menu-bar-fixed {
   width: 20%;
-  height: 70%;
+  height: 80%;
   position: fixed;
   top: 0;
   right: 0;
@@ -65,8 +65,7 @@
 }
 .menu-bar-fixed .menu-main {
   width: 100%;
-  height: 65%;
-  margin-top: -10%;
+  height: 55%;
 }
 .menu-bar-fixed .menu-main a {
   display: block;
@@ -77,7 +76,7 @@
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 13px;
-  margin: 30px 12px;
+  margin: 20px 12px;
   letter-spacing: 2px;
   color: white;
   text-shadow: 0 0 1px #272727;
@@ -88,9 +87,9 @@
   color: #f05223;
 }
 .menu-bar-fixed .menu-foot {
+  margin-top: 5%;
   width: 100%;
   height: 20%;
-  margin-top: -5%;
 }
 .menu-bar-fixed .menu-foot p {
   font-family: "Montserrat";
@@ -106,6 +105,12 @@
   height: 20px;
   border-radius: 7px;
   margin: 5px;
+}
+
+.fixed-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 8;
 }
 
 .logo-nav-wrapper {
@@ -423,6 +428,9 @@
   margin: auto 5%;
   margin-bottom: 100px;
 }
+.body-galery .mobile-galery {
+  display: none;
+}
 .body-galery .slide-galery {
   width: 100%;
   height: 600px;
@@ -518,7 +526,7 @@
   padding-bottom: 10px;
 }
 .body-value .box-value-list .box-section-value p {
-  font-size: 16;
+  font-size: 16px;
   font-family: "Oswald";
   color: #666666;
 }
@@ -780,6 +788,7 @@ footer .footer-main .footer-main-info h5 {
 }
 footer .footer-main .footer-main-info section {
   flex: 1;
+  display: flex;
 }
 footer .footer-main .footer-main-info .img-list-media {
   margin-left: 15%;
@@ -852,6 +861,9 @@ footer .footer-main .footer-main-img span {
   text-shadow: 0 0 1px black;
   cursor: pointer;
 }
+footer .footer-main .footer-main-img .border-media {
+  display: none;
+}
 footer .footer-foot {
   width: 100%;
   height: 100px;
@@ -879,6 +891,9 @@ footer .footer-foot p {
     padding-bottom: 60px;
     margin-bottom: -200px;
   }
+  .jumbotron .box-wrapper .title-jumbotron {
+    font-size: 70px;
+  }
   .jumbotron .box-wrapper .text-jumbotron {
     font-size: 24px;
     text-shadow: 0 0 1px white;
@@ -886,11 +901,14 @@ footer .footer-foot p {
   }
   .jumbotron .box-wrapper .btn-jumbotron {
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
   }
   .jumbotron .box-wrapper .btn-jumbotron:hover {
     color: #f05223;
+  }
+  .body-company h2 {
+    font-size: 35px;
   }
   .body-company .box-about {
     width: 100%;
@@ -979,6 +997,38 @@ footer .footer-foot p {
     justify-content: center;
     height: auto;
   }
+  .body-galery .web-galery {
+    display: none;
+  }
+  .body-galery .mobile-galery {
+    display: block;
+  }
+  .body-galery .slide-galery {
+    width: 100%;
+    flex-direction: column;
+  }
+  .body-galery .slide-galery .box-slide img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2%;
+  }
+  .body-galery .slide-galery .box-btn-galery {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .body-galery .btn-slide-side {
+    border: none;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #f05223;
+    transition: 0.6s;
+    padding: auto 5%;
+    border-radius: 50%;
+    margin: 10px;
+  }
   .body-milestone {
     background-image: none;
     background-color: rgba(240, 83, 35, 0.0941176471);
@@ -1042,6 +1092,8 @@ footer .footer-foot p {
   .body-milestone .box-list-icon .wrap-box-active .box-list-head {
     width: 100%;
     flex: 1;
+    min-height: 60px;
+    max-height: 60px;
     border-bottom: 1px solid #f05223;
   }
   .body-milestone .box-list-icon .wrap-box-active .box-list-head .bullet-icon {
@@ -1080,6 +1132,19 @@ footer .footer-foot p {
   .body-milestone .box-text-milistone p {
     display: none;
   }
+  .body-value {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .body-value h2 {
+    font-size: 35px;
+  }
+  .body-value .box-value-list {
+    width: 300%;
+  }
+  .body-value .box-value-list .box-section-value {
+    width: 30%;
+  }
   .body-testimoni {
     min-height: 300px;
     height: auto;
@@ -1089,9 +1154,15 @@ footer .footer-foot p {
     padding: 0 5%;
     width: 100%;
   }
+  .body-career {
+    padding: 50px 0px;
+  }
+  .body-career .info-career h2 {
+    font-size: 35px;
+  }
   .body-career .info-career img {
     width: 100%;
-    height: 300px;
+    height: 500px;
   }
   .body-career .info-career h4 {
     font-size: 28px;
@@ -1123,6 +1194,7 @@ footer .footer-foot p {
   }
   .body-contact .contact-img h2 {
     display: block;
+    font-size: 35px;
   }
   footer {
     min-height: 800px;
@@ -1132,16 +1204,237 @@ footer .footer-foot p {
     min-height: 700px;
     height: auto;
   }
-  footer .footer-main-map {
-    margin-top: 50px;
+  footer .footer-main .footer-main-info .border-phone {
+    padding-bottom: 20px;
   }
-  footer .footer-main-img {
+  footer .footer-main .footer-main-info section {
+    display: none;
+  }
+  footer .footer-main .footer-main-img {
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+  footer .footer-main .footer-main-img .border-media {
+    display: block;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-main-img .border-media h5 {
+    padding: 30px 0;
+    font-size: 16px;
+    font-family: "Oswald";
+    color: #f05223;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+    letter-spacing: 1px;
+  }
+  footer .footer-main .footer-main-img .border-media .img-list-media {
+    width: 100%;
+  }
+  footer .footer-main .footer-main-img .border-media .img-list-media img {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  footer .footer-main .footer-main-img .img-box-list {
+    margin-bottom: 20px;
+  }
+  footer .footer-main .footer-main-img span {
+    margin-top: 20px;
+  }
+  footer .footer-main-map {
+    height: auto;
     margin-top: 50px;
   }
   .menu-bar-fixed {
     width: 50%;
     height: 100%;
     z-index: 15;
+  }
+}
+@media screen and (max-width: 770px) {
+  .body-testimoni p {
+    font-size: 16px;
+  }
+  .body-value .box-value-list .box-section-value h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .body-value .box-value-list .box-section-value p {
+    font-size: 14px;
+  }
+  .menu-bar-fixed {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+  }
+}
+@media screen and (max-width: 600px) {
+  .jumbotron .box-wrapper .text-jumbotron {
+    font-size: 15px;
+  }
+  .jumbotron .box-wrapper .title-jumbotron {
+    font-size: 40px;
+  }
+  .jumbotron .box-wrapper .btn-jumbotron {
+    font-size: 18px;
+  }
+  .body-company h2 {
+    font-size: 30px;
+  }
+  .body-testimoni p {
+    font-size: 16px;
+  }
+  .body-company .box-about > .text-box-company h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .body-company .box-about > .text-box-company p {
+    font-size: 14px;
+  }
+  .body-company .box-mission > .text-box-company h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .body-company .box-mission > .text-box-company p {
+    font-size: 14px;
+  }
+  .body-company .box-business > .text-box-company h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .body-company .box-business > .text-box-company p {
+    font-size: 14px;
+  }
+  .body-milestone {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .body-milestone h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .body-milestone .box-list-icon .wrap-box-icon > .box-list-head > p {
+    font-size: 14px;
+  }
+  .body-milestone .box-list-icon .wrap-box-active > .box-list-main > p {
+    font-size: 14px;
+  }
+  .body-galery {
+    min-height: 400px;
+    margin: 0 auto;
+  }
+  .body-galery .slide-galery {
+    height: 400px;
+  }
+  .body-galery .box-slide {
+    height: 350px;
+  }
+  .body-galery h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .body-galery .btn-slide-side {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .body-career .info-career h4 {
+    font-size: 20px;
+  }
+  .body-career .info-career p {
+    font-size: 14px;
+  }
+  .body-career .info-career img {
+    height: 350px;
+  }
+  .body-career .form-career .label-form-text {
+    font-size: 14px;
+  }
+  .body-career .form-career .input-form-style {
+    font-size: 14px;
+  }
+  .body-career .form-career .input-form-style option {
+    font-size: 14px;
+  }
+  .body-contact > .contact-form p {
+    font-size: 14px;
+  }
+  .body-contact > .contact-form input {
+    font-size: 14px;
+  }
+  .body-value .box-value-list {
+    width: 300%;
+  }
+  .body-value .box-value-list .box-section-value {
+    width: 300px;
+    min-width: 25%;
+    margin: 0 0.5%;
+  }
+  .body-value .box-value-list .box-section-value h4 {
+    color: #333333;
+    font-size: 25px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 1px #333333;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .body-value .box-value-list .box-section-value p {
+    font-size: 14px;
   }
 }
 

@@ -2,6 +2,11 @@
 
 // header
 // navbar
+.fixed-navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
 .logo-nav-wrapper{
     flex:5;
     .logo-nav{

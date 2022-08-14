@@ -22,7 +22,7 @@
   <body>
     <!-- header -->
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-navbar bg-white">
       <div class="container d-flex justify-content-between w-100">
         <a class="navbar-brand logo-nav-wrapper" href="#"
           ><img class="logo-nav" src="/assets/img/logo.png" alt="logo" />
@@ -281,85 +281,148 @@
     <!-- galery -->
     <main class="body-galery">
       <h4>OUR GALERY</h4>
-      <div
-        id="slideGalery"
-        class="carousel slide d-flex justify-content-between p-4 slide-galery"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators indicator-list-bullet">
-          <button
-            type="button"
-            class="active bullet-slide"
-            data-bs-target="#slideGalery"
-            data-bs-slide-to="0"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            class="bullet-slide"
-            data-bs-target="#slideGalery"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            class="bullet-slide"
-            data-bs-target="#slideGalery"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <button
-          class="btn-slide-side bg-white"
-          type="button"
-          data-bs-target="#slideGalery"
-          data-bs-slide="prev"
+      <!-- web galery -->
+      <section class="web-galery">
+        <div
+          id="slideGalery"
+          class="carousel slide d-flex justify-content-between p-4 slide-galery"
+          data-bs-ride="carousel"
         >
-          <i class="fa-solid fa-angle-left"></i>
-        </button>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <section class="box-slide mx-auto d-flex">
-              <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto5.jpg" alt="" />
-              <img src="/assets/img/body/galery/foto6.jpg" alt="" />
-            </section>
+          <div class="carousel-indicators indicator-list-bullet">
+            <button
+              type="button"
+              class="active bullet-slide"
+              data-bs-target="#slideGalery"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              class="bullet-slide"
+              data-bs-target="#slideGalery"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              class="bullet-slide"
+              data-bs-target="#slideGalery"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <div class="carousel-item">
-            <section class="box-slide mx-auto d-flex">
-              <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto5.jpg" alt="" />
-              <img src="/assets/img/body/galery/foto6.jpg" alt="" />
-            </section>
+          <button
+            class="btn-slide-side bg-white"
+            type="button"
+            data-bs-target="#slideGalery"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto5.jpg" alt="" />
+                <img src="/assets/img/body/galery/foto6.jpg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto5.jpg" alt="" />
+                <img src="/assets/img/body/galery/foto6.jpg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
+                <img src="/assets/img/body/galery/foto5.jpg" alt="" />
+                <img src="/assets/img/body/galery/foto6.jpg" alt="" />
+              </section>
+            </div>
           </div>
-          <div class="carousel-item">
-            <section class="box-slide mx-auto d-flex">
-              <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
-              <img src="/assets/img/body/galery/foto5.jpg" alt="" />
-              <img src="/assets/img/body/galery/foto6.jpg" alt="" />
-            </section>
-          </div>
+          <button
+            class="btn-slide-side bg-white"
+            type="button"
+            data-bs-target="#slideGalery"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
-
-        <button
-          class="btn-slide-side bg-white"
-          type="button"
-          data-bs-target="#slideGalery"
-          data-bs-slide="next"
+      </section>
+      <!-- web galery -->
+      <!-- mobile galery -->
+      <section class="mobile-galery">
+        <div
+          id="slideGaleryMobile"
+          class="carousel slide d-flex justify-content-between p-4 slide-galery"
+          data-bs-ride="carousel"
         >
-          <i class="fa-solid fa-angle-right"></i>
-        </button>
-      </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto1.jpeg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto2.jpeg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto3.jpeg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto4.jpeg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto5.jpg" alt="" />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="box-slide mx-auto d-flex">
+                <img src="/assets/img/body/galery/foto6.jpg" alt="" />
+              </section>
+            </div>
+          </div>
+          <section class="box-btn-galery">
+            <button
+              class="btn-slide-side"
+              type="button"
+              data-bs-target="#slideGaleryMobile"
+              data-bs-slide="prev"
+            >
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button
+              class="btn-slide-side"
+              type="button"
+              data-bs-target="#slideGaleryMobile"
+              data-bs-slide="next"
+            >
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </section>
+        </div>
+      </section>
+      <!-- mobile galery -->
     </main>
     <!-- galery -->
     <!-- values -->
@@ -445,13 +508,7 @@
             </p>
           </section>
         </section>
-        <section class="slide-click-btn">
-          <button
-            id="btn-left-value"
-            class="btn-value btn-active-value"
-          ></button>
-          <button id="btn-right-value" class="btn-value"></button>
-        </section>
+        <section id="btn-box-value" class="slide-click-btn"></section>
       </div>
     </main>
     <!-- value -->
@@ -477,13 +534,13 @@
     <main id="career" class="body-career">
       <div class="container w-100 d-flex">
         <div class="row w-100">
-          <div class="col-md-5 info-career">
+          <div class="col-lg-5 info-career">
             <h2 class="pb-3">CAREER</h2>
             <img src="/assets/img/body/career/photo.jpg" alt="photo" />
             <p class="pt-5 pb-3">JOIN WITH US</p>
             <h4>MEET OUR GROWING TEAM</h4>
           </div>
-          <div class="col-md-7 form-career">
+          <div class="col-lg-7 form-career">
             <form action="" class="row">
               <div class="mb-3 pb-1">
                 <label for="job-title" class="form-label label-form-text"
@@ -819,8 +876,8 @@
               <h5>Email</h5>
               <p>Corporate@waktuciptadimensi.com</p>
               <h5>Phone</h5>
-              <p class="border-phone pb-1">021-2255-4007</p>
-              <section class="d-flex justify-content-between">
+              <p class="border-phone">021-2255-4007</p>
+              <section class="justify-content-between follow-us">
                 <h5>Follow Us:</h5>
                 <section class="img-list-media d-flex justify-content-between">
                   <a href="#"><img src="/assets/img/footer/ig.jpg" alt="" /></a>
@@ -892,6 +949,27 @@
                 </section>
               </section>
               <span>View more</span>
+              <section class="border-media">
+                <h5>Follow Us:</h5>
+                <section class="img-list-media d-flex justify-content-between">
+                  <a href="#"><img src="/assets/img/footer/ig.jpg" alt="" /></a>
+                  <a href="#"
+                    ><img src="/assets/img/footer/jobstreet.jpg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/img/footer/linkin.jpg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/img/footer/icon4.jpg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/img/footer/jobid.jpg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/img/footer/glints.jpg" alt=""
+                  /></a>
+                </section>
+              </section>
             </section>
           </section>
         </div>
