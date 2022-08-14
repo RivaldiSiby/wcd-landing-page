@@ -12,6 +12,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- font awsome -->
     <link href="/assets/icon/css/all.css" rel="stylesheet" />
     <!-- index css -->
@@ -66,7 +68,7 @@
     <main class="jumbotron">
       <section class="box-wrapper d-flex flex-column">
         <section class="text-center">
-          <h1 class="title-jumbotron">VALUE YOUR TIME</h1>
+          <h1 data-aos="fade-up" class="title-jumbotron">VALUE YOUR TIME</h1>
           <p class="text-jumbotron mt-2">Bangun Waktu Anda Lebih berharga</p>
           <button class="btn-jumbotron mt-4">CAREER</button>
         </section>
@@ -78,12 +80,16 @@
     <!-- body -->
     <!-- company -->
     <main id="company" class="body-company container">
-      <h2 class="p-5 text-center">OUR COMPANY</h2>
+      <h2 data-aos="fade-down" class="p-5 text-center">OUR COMPANY</h2>
       <section class="box-about d-flex">
         <section class="img-box-company">
-          <img src="/assets/img/body/company/about.jpeg" alt="about" />
+          <img
+            data-aos="fade-up"
+            src="/assets/img/body/company/about.jpeg"
+            alt="about"
+          />
         </section>
-        <div class="text-box-company ps-2 pe-2">
+        <div data-aos="fade-left" class="text-box-company ps-2 pe-2">
           <h4 class="pb-1">About Us</h4>
           <p>
             Dengan pengalaman hampir satu dekade di industri fashion jam tangan,
@@ -97,7 +103,7 @@
         </div>
       </section>
       <section class="box-mission d-flex">
-        <div class="text-box-company ps-2 pe-2">
+        <div data-aos="fade-right" class="text-box-company ps-2 pe-2">
           <h4 class="pb-1">Vission</h4>
           <p>
             Menjadi perusahaan dengan reputasi nasional-global, menciptakan masa
@@ -137,14 +143,25 @@
           </div>
         </div>
         <section class="img-box-company">
-          <img src="/assets/img/body/company/mission.jpeg" alt="about" />
+          <img
+            data-aos="fade-up"
+            src="/assets/img/body/company/mission.jpeg"
+            alt="about"
+          />
         </section>
       </section>
       <section class="box-business d-flex">
         <section class="img-box-company">
-          <img src="/assets/img/body/company/core.jpeg" alt="about" />
+          <img
+            data-aos="fade-up"
+            src="/assets/img/body/company/core.jpeg"
+            alt="about"
+          />
         </section>
-        <div class="text-box-company d-flex flex-column ps-2 pe-2">
+        <div
+          data-aos="fade-left"
+          class="text-box-company d-flex flex-column ps-2 pe-2"
+        >
           <h4 class="pb-1">Core Business</h4>
           <p>
             Core Bisnis utama kami adalah bisnis produk jam tangan, fokus kami
@@ -160,9 +177,10 @@
     <!-- company -->
     <!-- milestone -->
     <main class="body-milestone">
-      <h4>OUR MILESTONE</h4>
+      <h4 data-aos="fade-down">OUR MILESTONE</h4>
       <section class="box-list-icon mx-auto d-flex row">
         <section
+          data-aos="fade-up"
           id="box-milestone1"
           class="wrap-box-icon col-lg-2 d-flex justify-content-between"
         >
@@ -182,6 +200,7 @@
           <section id="main-text1" class="box-list-main"></section>
         </section>
         <section
+          data-aos="fade-up"
           id="box-milestone2"
           class="wrap-box-icon col-lg-2 d-flex justify-content-between"
         >
@@ -211,6 +230,7 @@
           </section>
         </section>
         <section
+          data-aos="fade-up"
           id="box-milestone3"
           class="wrap-box-icon col-lg-2 d-flex justify-content-between"
         >
@@ -230,6 +250,7 @@
           <section id="main-text3" class="box-list-main"></section>
         </section>
         <section
+          data-aos="fade-up"
           id="box-milestone4"
           class="wrap-box-icon col-lg-2 d-flex justify-content-between"
         >
@@ -249,6 +270,7 @@
           <section id="main-text4" class="box-list-main"></section>
         </section>
         <section
+          data-aos="fade-up"
           id="box-milestone5"
           class="wrap-box-icon col-lg-2 d-flex justify-content-between"
         >
@@ -268,7 +290,10 @@
           <section id="main-text5" class="box-list-main"></section>
         </section>
       </section>
-      <section class="box-text-milistone text-center mx-auto">
+      <section
+        data-aos="zoom-in"
+        class="box-text-milistone text-center mx-auto"
+      >
         <p>
           PT Waktu Cipta Dimensi adalah perusahaan fashion & trend produk jam
           tangan yang bertujuan mengembangkan berbagai macam brand nasional,
@@ -280,9 +305,9 @@
     <!-- milestone -->
     <!-- galery -->
     <main class="body-galery">
-      <h4>OUR GALERY</h4>
+      <h4 data-aos="fade-up">OUR GALERY</h4>
       <!-- web galery -->
-      <section class="web-galery">
+      <section data-aos="zoom-in-down" class="web-galery">
         <div
           id="slideGalery"
           class="carousel slide d-flex justify-content-between p-4 slide-galery"
@@ -364,7 +389,7 @@
       </section>
       <!-- web galery -->
       <!-- mobile galery -->
-      <section class="mobile-galery">
+      <section data-aos="zoom-in-down" class="mobile-galery">
         <div
           id="slideGaleryMobile"
           class="carousel slide d-flex justify-content-between p-4 slide-galery"
@@ -428,9 +453,9 @@
     <!-- values -->
     <main id="values" class="body-value">
       <div class="container">
-        <h2 class="pt-5 pb-3">CORE VALUES</h2>
+        <h2 data-aos="fade-right" class="pt-5 pb-3">CORE VALUES</h2>
         <section class="box-value-list d-flex">
-          <section class="box-section-value p-4">
+          <section class="box-section-value p-4" data-aos="fade-down">
             <i class="fa-solid fa-clock"></i>
             <h4>VALUE TIME</h4>
             <p>
@@ -443,7 +468,7 @@
               menghargai waktu dengan sebaik-baiknya.
             </p>
           </section>
-          <section class="box-section-value p-4">
+          <section class="box-section-value p-4" data-aos="fade-down">
             <i class="fa-solid fa-clock"></i>
             <h4>Environment</h4>
             <p class="text-value-active">
@@ -456,7 +481,7 @@
               kreatifitas dan produktivitas kerja bisa meningkat.
             </p>
           </section>
-          <section class="box-section-value p-4">
+          <section class="box-section-value p-4" data-aos="fade-down">
             <i class="fa-solid fa-clock"></i>
             <h4>A Good Start</h4>
             <p>
@@ -468,7 +493,7 @@
               setiap hari diberkahi dan diberkati oleh Tuhan yang Maha Kuasa.
             </p>
           </section>
-          <section class="box-section-value p-4">
+          <section class="box-section-value p-4" data-aos="fade-down">
             <i class="fa-solid fa-clock"></i>
             <h4>Integrity</h4>
             <p>
@@ -481,7 +506,7 @@
               kami.
             </p>
           </section>
-          <section class="box-section-value p-4">
+          <section class="box-section-value p-4" data-aos="fade-down">
             <i class="fa-solid fa-clock"></i>
             <h4>Integrity</h4>
             <p>
@@ -494,7 +519,7 @@
               kami.
             </p>
           </section>
-          <section class="box-section-value p-4">
+          <section class="box-section-value p-4" data-aos="fade-down">
             <i class="fa-solid fa-clock"></i>
             <h4>Integrity</h4>
             <p>
@@ -516,18 +541,22 @@
     <main
       class="body-testimoni text-center d-flex flex-column justify-content-center align-items-center"
     >
-      <img src="/assets/img/body/testimoni/founder.jpg" alt="" />
-      <h5 class="pt-3">
+      <img
+        data-aos="flip-left"
+        src="/assets/img/body/testimoni/founder.jpg"
+        alt=""
+      />
+      <h5 data-aos="zoom-in" class="pt-3">
         Irfan <span>/</span> <span class="position">CEO & Founder</span>
       </h5>
-      <p class="pt-3">
+      <p data-aos="fade-up" class="pt-3">
         Semangat saling belajar, berbagi pengalaman dan pengetahuan kepada tim
         untuk bisa sama seperti yang kita lakukan, bahkan mengembangkan lebih
         baik daripada yang kita lakukan dan memberi pengaruh kepada tim untuk
         bisa maju dan konsisten mengembangkan diri dari waktu ke waktu. Untuk
         meningkatkan nilai-nilai kehidupan yang lebih baik di masa depan.
       </p>
-      <i class="fa-solid fa-quote-right"></i>
+      <i data-aos="fade-up" class="fa-solid fa-quote-right"></i>
     </main>
     <!-- testimoni -->
     <!-- career -->
@@ -535,7 +564,7 @@
       <div class="container w-100 d-flex">
         <div class="row w-100">
           <div class="col-lg-5 info-career">
-            <h2 class="pb-3">CAREER</h2>
+            <h2 data-aos="fade-down" class="pb-3">CAREER</h2>
             <img src="/assets/img/body/career/photo.jpg" alt="photo" />
             <p class="pt-5 pb-3">JOIN WITH US</p>
             <h4>MEET OUR GROWING TEAM</h4>
@@ -808,7 +837,7 @@
     <!-- contact -->
     <main id="contact" class="body-contact container">
       <div class="contact-form">
-        <h2 class="pb-4">CONTACT US</h2>
+        <h2 data-aos="fade-up" class="pb-4">CONTACT US</h2>
         <p class="pb-4">
           Bagi Anda yang membutuhkan informasi lebih lanjut, silahkan
           menghubungi kami melalui form berikut ini :
@@ -853,7 +882,11 @@
       </div>
       <div class="contact-img h-100">
         <h2 class="pb-4">CONTACT US</h2>
-        <img src="/assets/img/body/contact/img.jpg" alt="" />
+        <img
+          data-aos="zoom-in-down"
+          src="/assets/img/body/contact/img.jpg"
+          alt=""
+        />
       </div>
     </main>
     <!-- contact -->
@@ -1049,6 +1082,11 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- aos animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- jquery -->
     <script src="/assets/js/jquery.js"></script>
     <!-- javascript -->
