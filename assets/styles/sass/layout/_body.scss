@@ -119,25 +119,30 @@
     height: auto;
     margin:auto 5%;
     margin-bottom: 100px;
+    padding: 5% 0;
     .mobile-galery{
         display: none;
      }
     .slide-galery{
         width:100%;
-        height: 600px;
+        min-height: 600px;
+        height:auto;
     }
     h4{
         @include mixin.titleSmall(start);
         margin-left:5%;
     }
     .box-slide{
-        height: 600px;
+        min-height: 600px;
+        height:auto;
         width: 95%;
         flex-wrap: wrap;
         justify-content: space-between;
         column-gap: 2%;
         img{
             width:32%;
+            max-height: 100%;
+            min-height: 100%;
             margin-bottom: 2%;
         }
     }
