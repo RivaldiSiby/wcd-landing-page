@@ -3,14 +3,15 @@
 // responsive tablet
 @media screen and (max-width:990px) {
     // header
-
     // navbar
+    
     .navbar-nav{
         display: none;
     }
     // navbar
     // jumbotron
     .jumbotron{
+        max-width: 100%;
         margin-bottom: 200px;
         .box-wrapper{
             justify-content: end;
@@ -71,6 +72,7 @@
         .slide-galery{
             width: 100%;
             flex-direction: column;
+            margin-bottom: 200px;
             .box-slide{
                 img{
                     width:100%;
@@ -82,6 +84,7 @@
                 display: flex;
                 justify-content: center;
                 padding-top:20px;
+                margin-bottom: -110px;
 
             }
         }
@@ -388,6 +391,11 @@
     
 }
 @media screen and (max-width:600px) {
+    .fixed-navbar{
+        position: fixed;
+        z-index: 8;
+        width:auto;
+    }
     
     // header
     .jumbotron {
@@ -462,6 +470,11 @@
         margin: 0 auto;
         .slide-galery{
             height: 400px;
+            margin-bottom: 100px;
+            
+            .box-btn-galery{
+                margin-bottom: -60px;
+            }
         }
         .box-slide{
             height: 350px;
@@ -473,7 +486,9 @@
             width: 40px;
             height: 40px;
             font-size: 25px;
+            
         }
+        
     }
     .body-career{
         .info-career{

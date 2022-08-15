@@ -4,8 +4,8 @@
 // navbar
 .fixed-navbar{
     position: fixed;
-    width: 100%;
     z-index: 8;
+    width:100%;
 }
 .logo-nav-wrapper{
     flex:5;
@@ -52,7 +52,6 @@
     background-size: cover;
    
     .box-wrapper{
-        display: none;
         background-color: #2e3436af;
         height:700px;
         width: 100%;
