@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/assets/fonts/Montserrat-Regular.woff");
@@ -927,7 +931,8 @@ footer .footer-foot p {
 }
 
 @media screen and (max-width: 990px) {
-  body {
+  * {
+    overflow-y: scroll;
     overflow-x: hidden;
   }
   .fixed-navbar {

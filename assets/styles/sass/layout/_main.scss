@@ -6,6 +6,11 @@
     padding:0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 // fonts
 @include mixin.addFont("Montserrat",'/assets/fonts/Montserrat-Regular.woff' );
 @include mixin.addFont("Oswald",'/assets/fonts/Oswald-Regular.woff' );
