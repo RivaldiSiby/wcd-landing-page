@@ -519,6 +519,9 @@ body {
   color: #f05223;
   transition: 0.6s;
   padding: auto 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .body-galery .btn-slide-side:hover {
   transform: scale(1.2);
