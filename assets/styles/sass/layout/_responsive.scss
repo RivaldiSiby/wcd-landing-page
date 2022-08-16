@@ -2,7 +2,7 @@
 @use "../modules/mixin";
 // responsive tablet
 @media screen and (max-width:990px) {
-    *{
+    body{
         overflow-x: hidden;
     }
     // header
@@ -16,6 +16,7 @@
     // navbar
     // jumbotron
     .jumbotron{
+        overflow:hidden;
         max-width: 100%;
         .box-wrapper{
             justify-content: end;

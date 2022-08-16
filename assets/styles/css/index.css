@@ -927,7 +927,7 @@ footer .footer-foot p {
 }
 
 @media screen and (max-width: 990px) {
-  * {
+  body {
     overflow-x: hidden;
   }
   .fixed-navbar {
@@ -937,6 +937,7 @@ footer .footer-foot p {
     display: none;
   }
   .jumbotron {
+    overflow: hidden;
     max-width: 100%;
   }
   .jumbotron .box-wrapper {
