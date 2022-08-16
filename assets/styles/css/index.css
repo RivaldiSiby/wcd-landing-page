@@ -937,7 +937,6 @@ footer .footer-foot p {
     display: none;
   }
   .jumbotron {
-    overflow: hidden;
     max-width: 100%;
   }
   .jumbotron .box-wrapper {
@@ -1349,9 +1348,6 @@ footer .footer-foot p {
   }
 }
 @media screen and (max-width: 770px) {
-  .jumbotron {
-    overflow-x: none;
-  }
   .body-testimoni p {
     font-size: 16px;
   }

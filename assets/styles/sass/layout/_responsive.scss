@@ -16,7 +16,6 @@
     // navbar
     // jumbotron
     .jumbotron{
-        overflow:hidden;
         max-width: 100%;
         .box-wrapper{
             justify-content: end;
@@ -389,9 +388,6 @@
 @media screen and (max-width:770px) {
     // navbar
    
-    .jumbotron{
-        overflow-x:none;
-    }
     // body
     // body testimoni 
     .body-testimoni{
