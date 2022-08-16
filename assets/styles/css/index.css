@@ -34,6 +34,7 @@ body {
   margin: 10px 0;
 }
 .fix-button .wa-btn {
+  overflow: hidden;
   width: 50px;
   font-size: 58px;
   text-decoration: none;
