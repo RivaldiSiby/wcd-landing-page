@@ -90,6 +90,7 @@
             .box-slide{
                 justify-content: flex-start;
                 min-height: 400px;
+                overflow-y: hidden;
                 img{
                     width:100%;
                     height: 100%;
@@ -128,6 +129,7 @@
             min-height: 180px;
             height:auto;
             display: flex;
+            overflow-y: hidden;
             .wrap-box-icon{
                 height: 60px;
                 width:100%;
@@ -233,9 +235,11 @@
             font-size: 35px;
         }
         .box-value-list{
+            overflow: unset;
             width: 300%;
             .box-section-value{
                 width: 30%;
+                overflow-y: hidden;
             }
         }
     }
@@ -249,6 +253,9 @@
         p{
             padding: 0 5%;
             width:100%;
+        }
+        h5{
+           overflow-y: hidden;
         }
     }
     // testiomi
@@ -265,6 +272,7 @@
                 max-height: 100%;
             }
             h4{
+                overflow-y: hidden;
                 font-size:28px;
             }
         }
@@ -329,6 +337,9 @@
                 section{
                     display: none;
                 }
+                h5{
+                    overflow-y: hidden;
+                }
             }
             .footer-main-img{
                 height: auto;
@@ -370,6 +381,15 @@
        .footer-main-map{
         height: auto;
         margin-top: 50px;
+       }
+       .footer-foot{
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+            p{
+                width: 100%;
+                text-align: center;
+            }
        }
        
     }
@@ -447,6 +467,7 @@
         }
         .title-jumbotron{
             font-size:40px;
+            overflow-y: hidden;
         }
         .btn-jumbotron{
             font-size:18px;

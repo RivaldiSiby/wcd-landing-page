@@ -1091,6 +1091,7 @@ footer .footer-foot p {
   .body-galery .slide-galery .box-slide {
     justify-content: flex-start;
     min-height: 400px;
+    overflow-y: hidden;
   }
   .body-galery .slide-galery .box-slide img {
     width: 100%;
@@ -1125,6 +1126,7 @@ footer .footer-foot p {
     min-height: 180px;
     height: auto;
     display: flex;
+    overflow-y: hidden;
   }
   .body-milestone .box-list-icon .wrap-box-icon {
     height: 60px;
@@ -1226,10 +1228,12 @@ footer .footer-foot p {
     font-size: 35px;
   }
   .body-value .box-value-list {
+    overflow: unset;
     width: 300%;
   }
   .body-value .box-value-list .box-section-value {
     width: 30%;
+    overflow-y: hidden;
   }
   .body-testimoni {
     overflow: hidden;
@@ -1240,6 +1244,9 @@ footer .footer-foot p {
   .body-testimoni p {
     padding: 0 5%;
     width: 100%;
+  }
+  .body-testimoni h5 {
+    overflow-y: hidden;
   }
   .body-career {
     padding: 50px 5%;
@@ -1253,6 +1260,7 @@ footer .footer-foot p {
     max-height: 100%;
   }
   .body-career .info-career h4 {
+    overflow-y: hidden;
     font-size: 28px;
   }
   .body-career .form-career {
@@ -1308,6 +1316,9 @@ footer .footer-foot p {
   footer .footer-main .footer-main-info section {
     display: none;
   }
+  footer .footer-main .footer-main-info h5 {
+    overflow-y: hidden;
+  }
   footer .footer-main .footer-main-img {
     height: auto;
     margin-top: 50px;
@@ -1345,6 +1356,15 @@ footer .footer-foot p {
   footer .footer-main-map {
     height: auto;
     margin-top: 50px;
+  }
+  footer .footer-foot {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  footer .footer-foot p {
+    width: 100%;
+    text-align: center;
   }
   .menu-bar-fixed {
     width: 50%;
@@ -1397,6 +1417,7 @@ footer .footer-foot p {
   }
   .mobile-jumbotron .title-jumbotron {
     font-size: 40px;
+    overflow-y: hidden;
   }
   .mobile-jumbotron .btn-jumbotron {
     font-size: 18px;
