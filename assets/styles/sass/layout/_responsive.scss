@@ -2,9 +2,14 @@
 @use "../modules/mixin";
 // responsive tablet
 @media screen and (max-width:990px) {
+    *{
+        overflow-x: hidden;
+    }
     // header
     // navbar
-    
+    .fixed-navbar{
+        padding:0;
+    }
     .navbar-nav{
         display: none;
     }
@@ -12,10 +17,10 @@
     // jumbotron
     .jumbotron{
         max-width: 100%;
-        margin-bottom: 200px;
         .box-wrapper{
             justify-content: end;
             section{
+                display: none;
                 background-color: #2e3436;
                 width: 100%;
                 padding-top:50px;
@@ -23,23 +28,30 @@
                 margin-bottom: -200px;
               
             }
-            .title-jumbotron{
-                font-size:70px;
-            }
-            .text-jumbotron {
-                font-size: 24px;
-                text-shadow: 0 0 1px white;
-                letter-spacing: 2px;
-            }
-            .btn-jumbotron{
-                border: none;
-                font-size: 20px;
-                letter-spacing: 1px;
-            }
-            .btn-jumbotron:hover {
-                color: variable.$colorOrange;
-            }
+            
         }
+    }
+    .mobile-jumbotron{
+        display: block;
+        background-color: #2e3436;
+        width: 100%;
+        padding-top:50px;
+        padding-bottom:60px;
+        margin-bottom: 50px;
+        .title-jumbotron{
+            font-size:70px;
+        }
+        .text-jumbotron {
+            font-size: 24px;
+            text-shadow: 0 0 1px white;
+            letter-spacing: 2px;
+        }
+        .btn-jumbotron{
+            border: none;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+      
     }
     // jumbotron
     // header
@@ -47,6 +59,7 @@
     // body
     // company
     .body-company{
+        padding: 0;
         h2{
             font-size: 35px;
         }
@@ -109,6 +122,7 @@
         background-color: #f0532318;
         min-height: 180px;
         height:auto;
+        padding-bottom: 50px;
         .box-list-icon{
             min-height: 180px;
             height:auto;
@@ -227,9 +241,10 @@
     // value
     // testiomi
     .body-testimoni{
-        min-height:300px;
+        overflow: hidden;
+        min-height:400px;
         height:auto;    
-        padding-bottom: 50px;    
+        margin: 50px 0;   
         p{
             padding: 0 5%;
             width:100%;
@@ -238,14 +253,15 @@
     // testiomi
     // carrer
     .body-career{
-        padding:50px 0px;
+        padding:50px 5%;
         .info-career{
             h2{
                 font-size:35px;
             }
-            img{
-                width:100%;
-                height: 500px;
+            .img-career{
+                width: 100%;
+                min-height: 700px;
+                max-height: 100%;
             }
             h4{
                 font-size:28px;
@@ -260,16 +276,23 @@
     .body-contact{
         min-height: 450px;
         height:auto;
+        padding: 0;
         flex-direction: column-reverse;
         .contact-form{
             height:auto;
             width: 100%;
             min-height: 450px;
+            padding: 0 5%;
             h2{
                 display:none;
             }
             p{
                 padding-top:20px;
+            }
+            form{
+                input,textarea{
+                    margin: 10px 0;
+                }
             }
         }
         .contact-img{
@@ -278,8 +301,12 @@
             flex-direction: column;
             padding-left: 0;
             h2{
+                padding: 0 5%;
                 display: block;
                 font-size:35px;
+            }
+            img{
+                min-height: 700px;
             }
         }
     }
@@ -292,6 +319,7 @@
        height:auto;
        .footer-main{
         min-height: 700px;
+        padding:50px 5%;
         height:auto;
             .footer-main-info{
                 .border-phone{
@@ -359,7 +387,10 @@
 
 @media screen and (max-width:770px) {
     // navbar
-
+   
+    .jumbotron{
+        overflow-x:none;
+    }
     // body
     // body testimoni 
     .body-testimoni{
@@ -412,6 +443,17 @@
             }
         }
     }
+    .mobile-jumbotron{
+        .text-jumbotron{
+            font-size:15px;
+        }
+        .title-jumbotron{
+            font-size:40px;
+        }
+        .btn-jumbotron{
+            font-size:18px;
+        }
+    }
     // header
     // body
     .body-company{ 
@@ -425,28 +467,37 @@
         }
     }
     .body-company{
-        .box-about > .text-box-company {
-            h4{
-                @include mixin.titleSmallResponsive(start);   
-            }
-            p{
-                font-size: 14px;
-            }
-        }
-        .box-mission > .text-box-company {
-            h4{
-                @include mixin.titleSmallResponsive(start);   
-            }
-            p{
-                font-size: 14px;
+        .box-about {
+            @include mixin.boxCompanyResponsiveMobile(column);
+             .text-box-company {
+                h4{
+                    @include mixin.titleSmallResponsive(start);   
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
-        .box-business > .text-box-company {
-            h4{
-                @include mixin.titleSmallResponsive(start);   
+        .box-mission { 
+            @include mixin.boxCompanyResponsiveMobile(column-reverse);
+            .text-box-company {
+                h4{
+                    @include mixin.titleSmallResponsive(start);   
+                }
+                p{
+                    font-size: 14px;
+                }
             }
-            p{
-                font-size: 14px;
+        }
+        .box-business { 
+            @include mixin.boxCompanyResponsiveMobile(column);
+            .text-box-company {
+                h4{
+                    @include mixin.titleSmallResponsive(start);   
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -468,9 +519,10 @@
     }
     .body-galery{
         min-height: 400px;
-        margin: 0 auto;
+        margin: 50px auto;
         .slide-galery{
-            height: 400px;
+            min-height: 400px;
+            height: 100%;
         }
         .box-slide{
             height: 350px;
@@ -494,8 +546,11 @@
             p{
                 font-size: 14px;
             }
-            img{
-                height:350px;
+            .img-career{
+                width: 100%;
+                min-height: 500px;
+                max-height: 100%;
+
             }
         }
         .form-career{
@@ -510,12 +565,20 @@
             }
         }
     }
-    .body-contact > .contact-form{
-        p{
-            font-size: 14px;
+    .body-contact { 
+        .contact-form{
+            p{
+                font-size: 14px;
+            }
+            input{
+                font-size: 14px;
+            }
         }
-        input{
-            font-size: 14px;
+        .contact-img{
+           img{
+            min-height:100%;
+            height: auto;
+           }
         }
     }
     // body value
